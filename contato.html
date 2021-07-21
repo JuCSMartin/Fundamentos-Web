@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vlad.html">Vlad</a></li>
+            <li><a href="malik.html">Malik</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </header>
+
+    <h1 id="titulo">Quer receber mais fotinhos?</h1>
+
+    <div class="container">
+        <div>
+            <p>Preencha o formulário com seu nome, e-mail e informe qual dos dois é seu favorito.</p>
+            <p>Você receberá um pack de fotos do gato que escolher. Ou quem sabe você quer fotos dos dois?</p>
+        
+            <form class="form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" onkeyup='validaNome()'>
+                <div id="txtNome"></div>
+            
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" onkeyup='validaEmail()'>
+                <div id="txtEmail"></div>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" cols="60" rows="5" onkeyup="validaMensagem()"></textarea>
+                <div id="txtMensagem"></div>
+                
+                <button onclick="enviar()">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <div class="container">
+            <a href="https://www.facebook.com/" target="_blank"> <img class="tm-social p-20" src="assets/img/facebook.png" alt="Logo do Facebook"></a>
+            
+            <a href="https://www.instagram.com/" target="_blank"> <img class="tm-social p-20" src="assets/img/instagram.png" alt="Logo do Instagram"></a>
+        </div>
+       
+        <div class="center">
+            <p>Desenvolvido por: <a href="https://www.linkedin.com/in/juliana-martinez-3b9170114/" target="_blank">Juliana Martinez &copy;</a></p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+
+</body>
+</html>
