@@ -35,9 +35,10 @@
                 <div id="txtEmail"></div>
                 
                 <label for="mensagem">Mensagem:</label>
-                <textarea name="mensagem" id="mensagem" cols="60" rows="5"></textarea>
+                <textarea name="mensagem" id="mensagem" cols="60" rows="5" onkeyup="validaMensagem()"></textarea>
+                <div id="txtMensagem"></div>
                 
-                <button>Enviar</button>
+                <button onclick="enviar()">Enviar</button>
             </form>
         </div>
     </div>
